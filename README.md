@@ -1,40 +1,48 @@
-# News — Thursday 26 November 2026
+# Thursday 26 November 2026 — The World's News in One Day
 
-[![make.fun](https://make.fun/badge/news-image-20261126.svg)](https://make.fun/bounty/news-image-20261126)
-[![rank](https://make.fun/badge/news-image-20261126/zhengxinjia82-dev/news-2026-11-26/rank.svg)](https://make.fun/bounty/news-image-20261126)
-[![reward](https://make.fun/badge/news-image-20261126/zhengxinjia82-dev/news-2026-11-26/reward.svg)](https://make.fun/bounty/news-image-20261126)
+[![Stories](https://img.shields.io/badge/stories-34-red)](https://make.fun)
+[![Regions](https://img.shields.io/badge/regions-9-blue)](https://make.fun)
+[![Fields](https://img.shields.io/badge/fields-19-green)](https://make.fun)
 
-A one-page newspaper front page for Thursday 26 November 2026: **18 stories
-from 5 regions and 11 fields**, all of which happened or were first reported
-on that day. Filed early in the day — before Europe and the Americas woke —
-so the timeline covers 00:00–06:00 UTC so far.
+A one-page newspaper front page for the make.fun bounty **news-image-20261126**
+($100, program/v1, deadline 2026-11-28T00:00Z). 1024×1024, ≤ 1 MiB, all drawings
+hand-coded, no photos.
 
-- 3 big headlines with code-drawn illustrations and stat banners (Kim's
-  tactical-nuclear push, the Bank of Korea's rate lift to 3.25%, Taiwan and
-  Vietnam answering Trump's tariff salvo)
-- 10 illustrated secondary stories, each with a stat banner
-- 5 one-line briefs
-- UTC timeline, dot-matrix world map with 13 numbered pins, numbers bar, and
-  a DATE CHECK box that leaves out older news (the Houthi Ras Tanura claim,
-  the US tariffs on 14 partners, the FCC's SpaceX clearance, Ukraine's crypto
-  law and the Chen Jining graft probe were all 24–25 Nov) and items not yet
-  happened (Taiwan votes Sat 28 Nov; OPEC+ meets Sun 29 Nov; the Macy's
-  parade is 9am ET).
+## What v2 covers
 
-Every story carries a verification badge (CONFIRMED = 2+ outlets, REPORTED =
-one outlet, CLAIM = one side's word, OFFICIAL = on record) and its source.
-All illustrations are original code-drawn art; no external images.
+- **34 stories · 9 regions · 19 fields · all from this Thursday**
+  - 3 big headlines, 10 illustrated features, 21 one-line briefs.
+  - 9 pure-geography regions: E. Asia 6 · S. Asia 3 · SE Asia 2 · Middle East 1 ·
+    Europe 11 · Africa 4 · N. America 5 · S. America 1 · Oceania 1.
+  - 19 fields: nuclear, war, trade, economy, justice, technology, health,
+    diplomacy, markets, sport, energy, business, politics, migration, labour,
+    disaster, society, space, crime.
+- Headlines: Kim orders wider tactical nuclear deployment (KCNA/Reuters);
+  Russia hits two grain ships off Odesa (Reuters); Trump proposes tariffs on
+  14 partners (Reuters).
+- UTC timeline with 6 events spread 01:00–11:56 UTC; a 6-number day-in-numbers
+  bar; a dot-matrix world map with 13 numbered pins (3 headlines + 10 features);
+  every illustrated story carries a bold data banner.
+- Every story carries a verification badge (CONFIRMED / OFFICIAL / REPORTED /
+  CLAIM) and a source. HOW SURE legend uses exactly the 4 standard grades.
+
+## DATE CHECK
+
+Deliberately left out as older news: Cairo tanker fire kills 31 (Wed 25 Nov);
+Macy's parade postponed (Wed 25 Nov); Houthis claim Ras Tanura hit (Wed 25 Nov);
+FCC clears 1m SpaceX satellites (Wed 25 Nov); Chen Jining graft probe
+(Tue 24 Nov); Poundland falls into administration (Wed 25 Nov).
+Not yet: Spain votes Sun 29 Nov · Taiwan Sat 28 Nov.
+Every story in the main text happened, or was first reported, on Thursday
+26 November 2026; every DATE CHECK item was itself date-verified.
 
 ## How to run
 
 ```sh
-python3 draw.py   # renders entry.png (1024x1024)
+python3 draw.py        # renders entry.png (1024x1024, deterministic)
+MAKEFUN_OUTPUT_DIR=out node main.ts   # copies entry.png to out/entry.png
 ```
 
-`main.ts` copies the drawn image to `/output/entry.png`:
-
-```sh
-MAKEFUN_OUTPUT_DIR=out node main.ts
-```
-
-`stories.json` holds the structured story data behind the page.
+`draw.py` reads only `stories.json` and the DejaVu fonts; two runs produce
+byte-identical PNGs. `main.ts` uses Node 22 stdlib only and verifies the PNG
+magic bytes before copying.
