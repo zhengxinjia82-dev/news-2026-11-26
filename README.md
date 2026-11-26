@@ -1,8 +1,8 @@
 # Thursday 26 November 2026 — The World's News in One Day
 
-[![Stories](https://img.shields.io/badge/stories-34-red)](https://make.fun)
-[![Regions](https://img.shields.io/badge/regions-9-blue)](https://make.fun)
-[![Fields](https://img.shields.io/badge/fields-19-green)](https://make.fun)
+[![make.fun](https://make.fun/badge/news-image-20261126.svg)](https://make.fun/bounty/news-image-20261126)
+[![rank](https://make.fun/badge/news-image-20261126/zhengxinjia82-dev/news-2026-11-26/rank.svg)](https://make.fun/bounty/news-image-20261126)
+[![reward](https://make.fun/badge/news-image-20261126/zhengxinjia82-dev/news-2026-11-26/reward.svg)](https://make.fun/bounty/news-image-20261126)
 
 A one-page newspaper front page for the make.fun bounty **news-image-20261126**
 ($100, program/v1, deadline 2026-11-28T00:00Z). 1024×1024, ≤ 1 MiB, all drawings
